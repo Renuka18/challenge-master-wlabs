@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmex Challenge</title>
+    <!-- Adding FavIcon to the App head  -->
+    <link rel="icon" href="./favicon.png">
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>All Users</h1>
+        <h6>Users and thier names</h6>
+        <table class="table-striped border-success" id="usersTable">
+            <thead>
+                <tr>
+                    <th data-field="username">
+                        <span class="text-success">
+                            username
+                        </span>
+                    </th>
+                    <th data-field="age">
+                        <span class="text-success">
+                            age
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+      <div class="container">
+
+        <h1>Age demographic of users users with <span id="selectedItem">___</span></h1>
+        <div class="dropdown" id="toolbar">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="itemDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select item
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="item-dropdown-menu">
+            </div>
+          </div>
+
+        <table class="table-striped border-success" id="ageTable"   data-toggle="table" data-toolbar="#toolbar">
+            <thead>
+                <tr>
+                    <th data-field="age">
+                        <span class="text-success">
+                            age
+                        </span>
+                    </th>
+                    <th data-field="count">
+                        <span class="text-success">
+                            count
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+  
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js">
+    </script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
